@@ -5,6 +5,8 @@ from diffsynth.trainers.utils import DiffusionTrainingModule, ModelLogger, launc
 from diffsynth.trainers.unified_dataset import UnifiedDataset, LoadVideo, LoadAudio, ImageCropAndResize, ToAbsolutePath
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
+import os
+os.environ['WANDB_API_KEY'] = '60b29f8aae47df8755cbd430f0179c0cd8797bf6'
 
 
 class WanTrainingModule(DiffusionTrainingModule):
